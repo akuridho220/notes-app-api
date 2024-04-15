@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MY Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="catatan">
+      <h2>My Notes</h2>
+    </div> -->
+    <header-note></header-note>
+
+    <div class="catatan-input">
+      <h3>Tambah Note Baru:</h3>
+      <div class="catatan-wrapper">
+        <input type="text" id="catatan-title" placeholder="Judul Note" />
+        <textarea
+          rows="5"
+          placeholder="Tulis Note ..."
+          id="catatan-content"
+        ></textarea>
+        <button type="button" class="klik" id="add-note-klik">
+          <span><i class="fas fa-plus"></i></span> Tambah Note
+        </button>
+      </div>
+      <div id="loading"></div>
+      <!-- <loader-animation></loader-animation> -->
+      <div>
+        <div class="note-app__body">
+          <!-- Aktif note -->
+          <h2>Catatan Aktif</h2>
+          <div id="activeNotesList" class="notes-list"></div>
+    
+          <!-- Arsip note -->
+          <h2>Arsip</h2>
+          <div id="archivedNotesList" class="notes-list"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-footer">
+      <!-- <footer>
+        <div class="footer-box">
+          <p>2024@Notes App Awal</p>
+        </div>
+      </footer> -->
+
+      <footer-note></footer-note>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
